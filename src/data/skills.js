@@ -16,27 +16,27 @@ const SkillsData = [
     image: require("../assets/Images/typescript.png"),
   },
   {
-    name: "MongoDB",
+    name: "Angular",
     image: require("../assets/Images/mongodb.png"),
   },
   {
-    name: "Express",
+    name: "ASP .NET",
     image: require("../assets/Images/express.png"),
   },
   {
-    name: "React",
+    name: "Advance Java",
     image: require("../assets/Images/react.png"),
   },
   {
-    name: "Node",
+    name: "Spring Boot",
     image: require("../assets/Images/node.png"),
   },
   {
-    name: "Redux",
+    name: "Python",
     image: require("../assets/Images/redux.png"),
   },
   {
-    name: "Next",
+    name: "Docker",
     image: require("../assets/Images/next.png"),
   },
   {
@@ -44,16 +44,28 @@ const SkillsData = [
     image: require("../assets/Images/tailwind.png"),
   },
   {
-    name: "Firebase",
+    name: "Agile",
     image: require("../assets/Images/firebase.png"),
   },
   {
-    name: "Prisma",
+    name: "Hibernate",
+    image: require("../assets/Images/prisma.png"),
+  },
+  {
+    name: "EF Core",
     image: require("../assets/Images/prisma.png"),
   },
   {
     name: "MySQL",
     image: require("../assets/Images/mysql.png"),
+  },
+  {
+    name: "MS SQL",
+    image: require("../assets/Images/prisma.png"),
+  },
+  {
+    name: "Postgres SQL",
+    image: require("../assets/Images/prisma.png"),
   },
   {
     name: "Postman",
