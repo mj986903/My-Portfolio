@@ -3,7 +3,7 @@ import EducationData from "../data/education";
 
 const Education = () => {
   return (
-    <section className="py-3 px-3 bg-white mt-4 md:mt-7">
+    <section className="py-3 px-3 mt-4 md:mt-7">
       <div className="mx-auto max-w-6xl">
         <div id="education" className="flex flex-col text-center mb-4 w-full ">
           <p
@@ -12,7 +12,7 @@ const Education = () => {
             data-aos-once="false"
             className="text-3xl mx-auto leading-relaxed font-medium text-dark-orange text-center"
           >
-            Personal Education
+            Education
           </p>
         </div>
 

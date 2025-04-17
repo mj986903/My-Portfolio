@@ -3,7 +3,7 @@ import ExperienceData from "../data/experience";
 
 const Experience = () => {
   return (
-    <section className="py-3 px-3 bg-white mt-4 md:mt-7">
+    <section className="py-3 px-3 mt-4 md:mt-7">
       <div className="mx-auto max-w-6xl">
         <div id="experience" className="flex flex-col text-center mb-4 w-full ">
           <p

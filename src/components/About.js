@@ -25,7 +25,7 @@ const About = () => {
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
           >
             <img
-              className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
+              className="object-cover object-center pointer-events-none rounded-2xl backdrop-contrast-200 backdrop-brightness-200 bg-darkblue"
               alt="hero"
               src={AboutData.image}
             />
@@ -37,7 +37,7 @@ const About = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-once="false"
-                className="font-medium text-gray-700 text-lg lg:text-base xl:text-xl leading-loose xl:leading-8 mb-4"
+                className="font-medium text-white text-lg lg:text-base xl:text-xl leading-loose xl:leading-8 mb-4"
               >
                 {item}
               </p>
