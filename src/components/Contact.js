@@ -7,14 +7,15 @@ import ContactData from "../data/contact";
 
 const Contact = () => {
   const formRef = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_9inzcz7",
-        "template_lg8ahdf",
+        "service_nwlngqt",
+        "template_v3jbydd",
         formRef.current,
-        "_8hE7B_7PzOSTxPxm"
+        "R49f3Who2Dl-WDvZJ"
       )
       .then(
         () => {
@@ -22,140 +23,143 @@ const Contact = () => {
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
           toast.error("Unable to send message!");
         }
       );
   };
 
   return (
-    <section className="text-gray-600 body-font ">
-      <div className="px-3 py-5 mx-auto text-center md:mt-7 sm:mx-7 md:mx-12 lg:mx-32 xl:mx-56">
-        <div id="contact" className="flex flex-col text-center w-full mb-4">
-          <p
+    <section className="text-gray-600 body-font">
+      <div className="px-4 py-12 mx-auto text-center sm:px-6 lg:px-8 max-w-7xl">
+        {/* Header */}
+        <div id="contact" className="mb-8">
+          <h2
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-once="false"
-            className="text-3xl font-medium leading-relaxed text-dark-orange "
+            className="text-4xl font-bold text-dark-orange sm:text-5xl"
           >
-            Let's keep in touch
+            Let's Keep in Touch
+          </h2>
+          <p
+            data-aos="fade-in"
+            data-aos-duration="1200"
+            className="mt-2 text-lg text-gray-500"
+          >
+            Reach out for collaborations or inquiries.
           </p>
         </div>
-        <div className="flex flex-col gap-2 md:flex-row w-full mx-auto rounded-xl bg-darkblue p-4 md:gap-7 lg:gap-9 lg:rounded-2xl xl:gap-10">
-          <div className="p-2 w-full text-center lg:p-5 xl:p-7 md:w-1/2 lg:w-4/6">
-            <h1
-              data-aos="zoom-in-down"
-              data-aos-duration="1000"
-              data-aos-once="false"
-              className="hidden md:block text-2xl lg:text-3xl text-dark-orange font-medium mb-3 lg:mb-4"
-            >
-              Get in touch
-            </h1>
-            <div
-              data-aos="zoom-in-down"
-              data-aos-duration="1000"
-              data-aos-once="false"
-              className="flex gap-5 mb-4 justify-center md:mb-5"
-            >
+
+        {/* Contact Wrapper */}
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-12 bg-darkblue shadow-xl rounded-2xl p-6 lg:p-10">
+          {/* Contact Info */}
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="w-full lg:w-1/2 bg-darkblue text-white p-8 rounded-xl"
+          >
+            <h3 className="text-3xl font-semibold text-dark-orange mb-6">
+              Get in Touch
+            </h3>
+            <div className="mb-8">
               <SocialHandles />
             </div>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-once="false"
-              className="flex gap-3 items-center mb-4 md:gap-2 lg:gap-5"
-            >
-              <FaPhoneAlt className="text-white" />
-              <a href="tel: +91 9979645392" className="text-white md:text-lg ">{ContactData.phone}</a>
-            </div>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-once="false"
-              className="flex gap-3 items-center mb-4 md:gap-2 lg:gap-5"
-            >
-              <FaEnvelope className="text-white" />
-              <a
-                href={`mailto:${ContactData.email}`}
-                className="text-white md:text-lg"
-              >
-                {ContactData.email}
-              </a>
-            </div>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-once="false"
-              className="flex gap-3 items-center md:gap-2 lg:gap-5"
-            >
-              <FaMapMarkerAlt className="text-white" />
-              <a href="https://www.google.com/maps/place/Rajkot,+Gujarat" className="leading-normal text-start text-white md:text-lg">
-                {ContactData.address}
-              </a>
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
+                <FaPhoneAlt className="text-xl" />
+                <a href={`tel:${ContactData.phone}`} className="text-lg">
+                  {ContactData.phone}
+                </a>
+              </div>
+              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
+                <FaEnvelope className="text-xl" />
+                <a href={`mailto:${ContactData.email}`} className="text-lg">
+                  {ContactData.email}
+                </a>
+              </div>
+              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
+                <FaMapMarkerAlt className="text-xl" />
+                <a
+                  href="https://www.google.com/maps/place/Rajkot,+Gujarat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg"
+                >
+                  {ContactData.address}
+                </a>
+              </div>
             </div>
           </div>
+
+          {/* Contact Form */}
           <form
-            data-aos="zoom-in-up"
+            data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-once="false"
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex bg-whitesmoke flex-col p-2 rounded-lg md:w-1/2 md:p-4 lg:px-5 lg:py-7 lg:m-4 lg:w-3/5"
+            className="w-full lg:w-1/2 p-8 bg-whitesmoke rounded-xl"
           >
-            <div
-              data-aos="zoom-in-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-              className="p-2 w-full"
-            >
-              <input
-                required
-                placeholder="Name"
-                type="text"
-                name="user_name"
-                className="mb-1 w-full bg-white rounded-md border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black p-2 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-              className="p-2 w-full"
-            >
-              <input
-                required
-                placeholder="Email"
-                type="email"
-                name="user_email"
-                className="mb-1 w-full bg-white rounded-md border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black p-2 leading-8 transition-colors duration-200 ease-in-out"
-              />
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-duration="1500"
-              data-aos-once="false"
-              className="p-2 w-full"
-            >
-              <textarea
-                required
-                placeholder="Message"
-                name="message"
-                className="mb-1 w-full bg-white rounded-md border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="1500"
-              data-aos-once="false"
-              className="p-2 w-full"
-            >
-              <button className=" font-medium mx-auto my-3 text-white bg-dark-orange border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-orange-600 transition duration-500 rounded-xl text-lg">
-                Send
-              </button>
+            <div className="space-y-6">
+              {/* Name Field */}
+              <div>
+                <input
+                  required
+                  name="user_name"
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:border-dark-orange focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all duration-300"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div>
+                <input
+                  required
+                  name="user_email"
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:border-dark-orange focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all duration-300"
+                />
+              </div>
+
+              {/* Message Field */}
+              <div>
+                <textarea
+                  required
+                  name="message"
+                  placeholder="Your Message"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:border-dark-orange focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 h-40 resize-none transition-all duration-300"
+                />
+              </div>
+
+              {/* Submit Button */}
+              <div>
+                <button
+                  type="submit"
+                  className="w-full py-3 px-6 bg-dark-orange text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 hover:scale-105 transition-all duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
             </div>
           </form>
         </div>
       </div>
+
+      {/* Custom CSS */}
+      <style jsx>{`
+        input:focus,
+        textarea:focus {
+          box-shadow: 0 0 8px rgba(255, 140, 0, 0.2);
+        }
+        button:hover {
+          transform: translateY(-2px);
+        }
+        .social-handles a:hover {
+          color: #f4f4f4;
+          transform: scale(1.2);
+        }
+      `}</style>
     </section>
   );
 };

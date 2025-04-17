@@ -18,7 +18,7 @@ function Layout() {
   return (
     <div className="App">
       <Navbar />
-      <main className="pt-16 min-h-[92vh]"> 
+      <main className="pt-16 min-h-[92vh] bg-darkblue"> 
         <Outlet /> 
       </main>
       <Footer />
