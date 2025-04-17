@@ -32,14 +32,11 @@ const Contact = () => {
     <section className="text-gray-600 body-font ">
       <div className="px-3 py-5 mx-auto text-center md:mt-7 sm:mx-7 md:mx-12 lg:mx-32 xl:mx-56">
         <div id="contact" className="flex flex-col text-center w-full mb-4">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-black">
-            Contact Me
-          </h1>
           <p
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-once="false"
-            className="text-lg font-medium leading-relaxed text-dark-orange "
+            className="text-3xl font-medium leading-relaxed text-dark-orange "
           >
             Let's keep in touch
           </p>
@@ -52,7 +49,7 @@ const Contact = () => {
               data-aos-once="false"
               className="hidden md:block text-2xl lg:text-3xl text-dark-orange font-medium mb-3 lg:mb-4"
             >
-              Get In Touch
+              Get in touch
             </h1>
             <div
               data-aos="zoom-in-down"
@@ -69,7 +66,7 @@ const Contact = () => {
               className="flex gap-3 items-center mb-4 md:gap-2 lg:gap-5"
             >
               <FaPhoneAlt className="text-white" />
-              <p className="text-white md:text-lg ">{ContactData.phone}</p>
+              <a href="tel: +91 9979645392" className="text-white md:text-lg ">{ContactData.phone}</a>
             </div>
             <div
               data-aos="fade-right"
@@ -92,9 +89,9 @@ const Contact = () => {
               className="flex gap-3 items-center md:gap-2 lg:gap-5"
             >
               <FaMapMarkerAlt className="text-white" />
-              <p className="leading-normal text-start text-white md:text-lg">
+              <a href="https://www.google.com/maps/place/Rajkot,+Gujarat" className="leading-normal text-start text-white md:text-lg">
                 {ContactData.address}
-              </p>
+              </a>
             </div>
           </div>
           <form

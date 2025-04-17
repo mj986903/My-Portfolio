@@ -1,76 +1,101 @@
 const SkillsData = [
   {
     name: "HTML",
-    image: require("../assets/Images/html.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
   },
   {
     name: "CSS",
-    image: require("../assets/Images/css.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
   },
   {
     name: "JavaScript",
-    image: require("../assets/Images/javascript.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
   {
     name: "TypeScript",
-    image: require("../assets/Images/typescript.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
   {
-    name: "MongoDB",
-    image: require("../assets/Images/mongodb.png"),
-  },
-  {
-    name: "Express",
-    image: require("../assets/Images/express.png"),
+    name: "Angular",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
   },
   {
     name: "React",
-    image: require("../assets/Images/react.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    name: "Node",
-    image: require("../assets/Images/node.png"),
+    name: "ASP .NET",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
   },
   {
-    name: "Redux",
-    image: require("../assets/Images/redux.png"),
+    name: "Advance Java",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
   },
   {
-    name: "Next",
-    image: require("../assets/Images/next.png"),
+    name: "Spring Boot",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+  },
+  {
+    name: "Python",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "Docker",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
   },
   {
     name: "Tailwind",
-    image: require("../assets/Images/tailwind.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
-    name: "Firebase",
-    image: require("../assets/Images/firebase.png"),
-  },
-  {
-    name: "Prisma",
-    image: require("../assets/Images/prisma.png"),
+    name: "Hibernate",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg",
   },
   {
     name: "MySQL",
-    image: require("../assets/Images/mysql.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
   },
   {
-    name: "Postman",
-    image: require("../assets/Images/postman.png"),
+    name: "MS SQL",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
   },
   {
-    name: "VS Code",
-    image: require("../assets/Images/vscode.png"),
+    name: "Postgres SQL",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "Pytorch",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+  },
+  {
+    name: "Tensor Flow",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+  },
+  {
+    name: "Flask",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+  },
+  {
+    name: "Streanlit",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
   },
   {
     name: "Git",
-    image: require("../assets/Images/git.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
   },
   {
     name: "GitHub",
-    image: require("../assets/Images/github.png"),
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
+  {
+    name: "Postman",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+  },
+  {
+    name: "VS Code",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  },
+  
 ];
 
 export default SkillsData;

@@ -1,27 +1,27 @@
 const Navlinks = [
   {
     title: "Home",
-    link: "home",
+    link: "/",
   },
   {
     title: "About",
-    link: "about",
+    link: "/about",
   },
   {
-    title: "Skills",
-    link: "skills",
-  },
-  {
-    title: "Projects",
-    link: "projects",
+    title: "Education",
+    link: "/education",
   },
   {
     title: "Experience",
-    link: "experience",
+    link: "/experience",
+  },
+  {
+    title: "Showcase",
+    link: "/showcase",
   },
   {
     title: "Contact",
-    link: "contact",
+    link: "/contact",
   },
 ];
 
