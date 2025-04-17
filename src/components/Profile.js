@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import SocialHandles from "./SocialHandles";
 import ProfileData from "../data/profile";
 import Wave from "./Wave";
@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <section
       id="home"
-      className="text-gray-600 bg-darkblue body-font pt-16 lg:min-h-75vh"
+      className="text-gray-600 bg-darkblue body-font"
     >
       <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
         <div
@@ -67,17 +67,12 @@ const Profile = () => {
             data-aos-once="false"
             className="mt-4 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
           >
-            <button className="inline-flex font-medium text-white bg-black border-2 border-white py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={750}
-              >
-                Hire Me
-              </Link>
-            </button>
+            <Link
+              to="/contact"
+              className="inline-flex font-medium text-white bg-black border-2 border-white py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10"
+            >
+              Hire Me
+            </Link>
             <a href={ProfileData.resume} target="_blank" rel="noreferrer">
               <button className="inline-flex font-medium text-white bg-dark-orange border-2 border-dark-orange py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
                 Get Resume

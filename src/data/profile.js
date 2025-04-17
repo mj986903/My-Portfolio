@@ -1,6 +1,6 @@
 const ProfileData = {
   img: require("../assets/Images/mohit.png"),
-  logo: require("../assets/Images/Name.png"),
+  logo: require("../assets/Images/name.png"),
   name: "Mohit Joshi",
   professions: ["Full Stack Developer", "AI Software Developer", "Enthusiastic Dev"],
   info: [

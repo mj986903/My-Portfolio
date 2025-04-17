@@ -17,7 +17,6 @@ const ExperienceData = [
       "Assisting in the design, development, and maintenance of scalable software solutions using ASP .NET, Java, Python, Angular, Docker, Spring Boot and related technologies.",
       "Collaborating with senior engineers and cross-functional teams to understand project requirements and deliver high-quality code.",
       "Gaining practical exposure to industry-standard development tools, version control systems (Git), and agile methodologies.",
-      "Continuously learning and applying software engineering principles to contribute effectively to real-world projects.",
     ],
   }  
 ];
