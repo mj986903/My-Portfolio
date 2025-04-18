@@ -73,7 +73,7 @@ const SkillsData = [
   },
   {
     name: "Flask",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+    image: require("../assets/Images/flask2.png"),
   },
   {
     name: "Streanlit",
@@ -85,7 +85,7 @@ const SkillsData = [
   },
   {
     name: "GitHub",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    image: require("../assets/Images/github.png"),
   },
   {
     name: "Postman",

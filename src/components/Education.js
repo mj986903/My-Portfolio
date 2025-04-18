@@ -10,7 +10,7 @@ const Education = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-once="false"
-            className="text-3xl mx-auto leading-relaxed font-medium text-dark-orange text-center"
+            className="text-3xl mx-auto leading-relaxed font-bold text-dark-orange text-center"
           >
             Education
           </p>
