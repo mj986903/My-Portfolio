@@ -30,10 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font">
-      <div className="px-4 py-12 mx-auto text-center sm:px-6 lg:px-8 max-w-7xl">
+    <section className="text-gray-600 body-font bg-darkblue ">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Header */}
-        <div id="contact" className="mb-8">
+        <div id="contact" className="text-center mb-12">
           <h2
             data-aos="zoom-in"
             data-aos-duration="1000"
@@ -44,62 +44,83 @@ const Contact = () => {
           <p
             data-aos="fade-in"
             data-aos-duration="1200"
-            className="mt-2 text-lg text-gray-500"
+            className="mt-3 text-lg text-gray-500 max-w-2xl mx-auto"
           >
             Reach out for collaborations or inquiries.
           </p>
         </div>
 
         {/* Contact Wrapper */}
-        <div className="flex flex-col gap-8 lg:flex-row lg:gap-12 bg-darkblue shadow-xl rounded-2xl p-6 lg:p-10">
-          {/* Contact Info */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  rounded-2xl shadow-2xl p-6 lg:p-10">
           <div
-            data-aos="fade-right"
+            data-aos="fade-left"
             data-aos-duration="1000"
-            className="w-full lg:w-1/2 bg-darkblue text-white p-8 rounded-xl"
+            className="bg-darkblue text-white p-6 rounded-xl flex flex-col gap-4"
           >
-            <h3 className="text-3xl font-semibold text-dark-orange mb-6">
-              Get in Touch
-            </h3>
-            <div className="mb-8">
+            {/* Header */}
+            <div className="text-center">
+              <h3 className="text-2xl font-semibold text-dark-orange">
+                Get in Touch
+              </h3>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex justify-center">
               <SocialHandles />
             </div>
-            <div className="space-y-6">
-              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
-                <FaPhoneAlt className="text-xl" />
-                <a href={`tel:${ContactData.phone}`} className="text-lg">
-                  {ContactData.phone}
-                </a>
-              </div>
-              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
-                <FaEnvelope className="text-xl" />
-                <a href={`mailto:${ContactData.email}`} className="text-lg">
-                  {ContactData.email}
-                </a>
-              </div>
-              <div className="flex items-center gap-4 hover:text-orange-300 transition-colors">
-                <FaMapMarkerAlt className="text-xl" />
-                <a
-                  href="https://www.google.com/maps/place/Rajkot,+Gujarat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg"
-                >
-                  {ContactData.address}
-                </a>
+
+            {/* Contact Details */}
+            <div className="flex flex-col items-center mt-10">
+              {/* Phone */}
+              <div className="flex flex-col gap-4">
+                {/* Phone */}
+                <div className="flex flex-row items-center gap-4 hover:text-orange-300 transition-colors">
+                  <FaPhoneAlt className="text-2xl" />
+                  <a
+                    href={`tel:${ContactData.phone}`}
+                    className="text-base font-medium"
+                  >
+                    {ContactData.phone}
+                  </a>
+                </div>
+
+                {/* Email */}
+                <div className="flex flex-row items-center gap-4 hover:text-orange-300 transition-colors">
+                  <FaEnvelope className="text-2xl" />
+                  <a
+                    href={`mailto:${ContactData.email}`}
+                    className="text-base font-medium"
+                  >
+                    {ContactData.email}
+                  </a>
+                </div>
+
+                {/* Address */}
+                <div className="flex flex-row items-center gap-4 hover:text-orange-300 transition-colors">
+                  <FaMapMarkerAlt className="text-2xl" />
+                  <a
+                    href="https://www.google.com/maps/place/Rajkot,+Gujarat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base font-medium"
+                  >
+                    {ContactData.address}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Contact Form */}
           <form
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1000"
             ref={formRef}
             onSubmit={handleSubmit}
-            className="w-full lg:w-1/2 p-8 bg-whitesmoke rounded-xl"
+            className="bg-whitesmoke p-8 rounded-xl"
           >
-            <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-dark-orange mb-6 text-center">
+              Send Us a Message
+            </h3>
+            <div className="space-y-5">
               {/* Name Field */}
               <div>
                 <input
@@ -128,7 +149,7 @@ const Contact = () => {
                   required
                   name="message"
                   placeholder="Your Message"
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:border-dark-orange focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 h-40 resize-none transition-all duration-300"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:border-dark-orange focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 h-48 resize-none transition-all duration-300"
                 />
               </div>
 

@@ -15,7 +15,7 @@ const Showcase = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-once="false"
-            className="text-3xl font-medium leading-relaxed text-dark-orange"
+            className="text-3xl font-bold leading-relaxed text-dark-orange"
           >
             My Works
           </p>
@@ -34,21 +34,21 @@ const Showcase = () => {
                 alt={project.name}
                 className="h-80 rounded-xl"
               />
-              <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-darkblue rounded-xl">
-                <h3 className="text-2xl font-medium text-white my-2">
+              <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-white rounded-xl">
+                <h3 className="text-2xl font-medium text-darkblue my-2">
                   {project.name}
                 </h3>
-                <p className="px-2 text-lg text-white">{project.description}</p>
+                <p className="px-2 text-lg text-darkblue">{project.description}</p>
                 <div className="flex flex-wrap items-center gap-3 mt-3">
                   {project?.icons?.map((Icon, index) => (
                     <div className="rounded-full p-2" key={index}>
-                      <Icon className="text-white text-4xl font-bold" />
+                      <Icon className="text-darkblue text-4xl font-bold" />
                     </div>
                   ))}
                 </div>
                 <div className="flex gap-7 justify-center items-center my-7 text-2xl">
                   <a
-                    className="text-darkblue text-xl bg-white rounded-full p-2"
+                    className="text-white text-xl bg-darkblue rounded-full p-2"
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const Showcase = () => {
                     <FaGithub />
                   </a>
                   <a
-                    className="text-darkblue text-xl bg-white rounded-full p-2"
+                    className="text-white text-xl bg-darkblue rounded-full p-2"
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -78,7 +78,7 @@ const Showcase = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-once="false"
-            className="text-3xl font-medium leading-relaxed text-dark-orange "
+            className="text-3xl font-bold leading-relaxed text-dark-orange "
           >
             My Technical Expertise
           </p>
@@ -103,7 +103,7 @@ const Showcase = () => {
                   alt={skill.name}
                   className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-110"
                 />
-                <p className="font-medium">{skill.name}</p>
+                <p className="font-medium text-white">{skill.name}</p>
               </div>
             );
           })}
