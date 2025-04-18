@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const ContactData = {
   phone: "+91 9979645392",
   email: "mj986903@gmail.com",
-  address: "Rajkot , Gujarat , India - 360001",
+  address: "Rajkot, India - 360001",
   links: [
     {
       url: "https://github.com/mj986903",
